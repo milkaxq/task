@@ -85,6 +85,8 @@ if not DEBUG:
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+ALLOWED_HOSTS = ['*']
+
 RESTFRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'users.authenticate.MyAuthentication',
